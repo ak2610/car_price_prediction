@@ -1,0 +1,88 @@
+<html> 
+<body> 
+	<h3>BMW Used Car Price Prediction</h3> 
+
+<div> 
+<form action="/predict" method="POST"> 
+	<label for="model">Model</label> 
+	<input type="text" id="model" name="model"> 
+	<br> 
+	<label for="mileage">Mileage</label> 
+	<input type="text" id="mileage" name="mileage"> 
+	<br>
+	<label for="engine_power">Engine Power</label> 
+	<input type="text" id="engine_power" name="engine_power"> 
+	<br>
+	<label for="car_type">Car Type</label> 
+	<select id="car_type" name="car_type"> 
+	<option value="0">estate</option> 
+	<option value="1">sedan</option> 
+	<option value="2">suv</option> 
+	<option value="3">hatchback</option> 
+	<option value="4">subcompact</option> 
+	<option value="5">coupe</option> 
+	<option value="6">convertible</option> 
+	<option value="7">van</option> 
+	</select> 
+	<br> 
+	<label for="fuel">Fuel</label> 
+	<select id="fuel" name="fuel"> 
+	<option value="0">Diesel</option> 
+	<option value="1">Petrol</option> 
+	<option value="2">Hybrid Petrol</option> 
+	<option value="3">Electric</option> 
+	</select> 
+	<br> 
+	<label for="feature1">Feature 1</label> 
+	<select id="feature1" name="feature1"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="feature2">Feature 2</label> 
+	<select id="feature2" name="feature2"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="feature3">Feature 3</label> 
+	<select id="feature3" name="feature3"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="feature4">Feature 4</label> 
+	<select id="feature4" name="feature4"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="feature5">Feature 5</label> 
+	<select id="feature5" name="feature5"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="feature6">Feature 6</label> 
+	<select id="feature6" name="feature6"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="feature8">Feature 8</label> 
+	<select id="feature8" name="feature8"> 
+	<option value="0">True</option> 
+	<option value="1">False</option> 
+	</select> 
+	<br> 
+	<label for="age">Age of Car (in years) </label> 
+	<input type="text" id="age" name="age">
+	<br> 
+	<input type="submit" value="Submit"> 
+</form> 
+<br>
+   <br>
+   {{ prediction_text }}
+</div> 
+</body> 
+</html> 
